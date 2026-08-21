@@ -1,0 +1,1427 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f3ff;
+    color: #292343;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+header {
+    width: 100%;
+    height: 75px;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #7046c7;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+
+    margin-left: 30px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #7046c7;
+}
+
+
+/* =========================
+   PÁGINA INICIAL
+========================= */
+
+.inicio {
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #eee7ff,
+        #e8f0ff
+    );
+}
+
+.inicio h1 {
+    font-size: 58px;
+
+    margin: 0 0 20px;
+
+    color: #7046c7;
+}
+
+.inicio p {
+    font-size: 21px;
+
+    max-width: 650px;
+
+    margin: 0 auto 40px;
+
+    color: #555;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.botao {
+    display: inline-block;
+
+    background: #7046c7;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 18px 40px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(112, 70, 199, 0.3);
+
+    transition: 0.2s;
+}
+
+.botao:hover {
+    background: #5d36ae;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   CATEGORIAS
+========================= */
+
+.categorias {
+    text-align: center;
+
+    padding: 80px 5%;
+}
+
+.categorias h2 {
+    font-size: 36px;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.card {
+    background: white;
+
+    border-radius: 20px;
+
+    padding: 40px;
+
+    text-decoration: none;
+
+    color: #292343;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.icone {
+    font-size: 55px;
+}
+
+.card h3 {
+    font-size: 27px;
+
+    margin: 15px 0 10px;
+
+    color: #7046c7;
+}
+
+.card p {
+    font-size: 17px;
+
+    color: #666;
+}
+
+.card span {
+    display: inline-block;
+
+    margin-top: 10px;
+
+    font-size: 14px;
+
+    color: #8a7aa8;
+}
+
+
+/* =========================
+   ALFABETO
+========================= */
+
+.alfabeto {
+    width: 100%;
+
+    padding: 60px 5%;
+
+    text-align: center;
+}
+
+.alfabeto h1 {
+    font-size: 48px;
+
+    color: #7046c7;
+
+    margin-bottom: 15px;
+}
+
+.alfabeto-intro {
+    font-size: 19px;
+
+    color: #666;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   LETRAS
+========================= */
+
+.letras {
+    width: 100%;
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 18px;
+}
+
+.letra {
+    height: 100px;
+
+    border: none;
+
+    border-radius: 18px;
+
+    background: #8064c7;
+
+    color: white;
+
+    font-size: 38px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+
+    transition: 0.2s;
+}
+
+.letra:hover {
+    background: #5d36ae;
+
+    transform: translateY(-5px) scale(1.03);
+}
+
+
+/* =========================
+   ÁREA DO VÍDEO
+========================= */
+
+.video-container {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 50px auto 0;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.video-container h2 {
+    color: #7046c7;
+
+    font-size: 32px;
+
+    margin-top: 0;
+}
+
+.video-container video {
+    width: 100%;
+
+    max-height: 550px;
+
+    border-radius: 15px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    background: #292343;
+
+    color: white;
+
+    margin-top: 40px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 900px) {
+
+    .letras {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .inicio {
+        padding: 70px 20px;
+    }
+
+    .inicio h1 {
+        font-size: 40px;
+    }
+
+    .inicio p {
+        font-size: 18px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .letras {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 12px;
+    }
+
+    .letra {
+        height: 75px;
+
+        font-size: 28px;
+    }
+
+    .video-container {
+        padding: 20px;
+    }
+
+}
+/* =========================
+   BOTÃO DO GUIA
+========================= */
+
+.botao-guia {
+    margin-bottom: 40px;
+
+    padding: 15px 25px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #7046c7;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(112, 70, 199, 0.25);
+
+    transition: 0.2s;
+}
+
+.botao-guia:hover {
+    background: #5d36ae;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   JANELA DO GUIA
+========================= */
+
+.guia {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(20, 15, 40, 0.75);
+
+    z-index: 1000;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   CONTEÚDO DO GUIA
+========================= */
+
+.guia-conteudo {
+    position: relative;
+
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+
+    overflow: auto;
+}
+
+.guia-conteudo h2 {
+    color: #7046c7;
+
+    margin-top: 0;
+
+    font-size: 30px;
+}
+
+
+/* =========================
+   IMAGEM
+========================= */
+
+.guia-conteudo img {
+    width: 100%;
+
+    max-width: 800px;
+
+    height: auto;
+
+    border-radius: 15px;
+}
+
+
+/* =========================
+   BOTÃO X
+========================= */
+
+.fechar-guia {
+    position: absolute;
+
+    top: 12px;
+    right: 18px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #7046c7;
+
+    color: white;
+
+    font-size: 30px;
+
+    line-height: 40px;
+
+    cursor: pointer;
+
+    z-index: 2;
+}
+
+.fechar-guia:hover {
+    background: #5d36ae;
+}
+/* =====================================
+   ÁREA DOS NÚMEROS
+===================================== */
+
+.numeros {
+
+    text-align: center;
+
+    padding: 70px 30px;
+
+    min-height: 75vh;
+
+}
+
+
+.numeros h1 {
+
+    font-size: 50px;
+
+    color: #7046c7;
+
+    margin-bottom: 15px;
+
+}
+
+
+.numeros-intro {
+
+    font-size: 19px;
+
+    color: #666;
+
+    margin-bottom: 45px;
+
+}
+
+
+/* =====================================
+   GRADE DOS NÚMEROS
+===================================== */
+
+.grade-numeros {
+
+    width: 100%;
+
+    max-width: 950px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* =====================================
+   CARDS DOS NÚMEROS
+===================================== */
+
+.numero-card {
+
+    height: 150px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #eee7ff
+        );
+
+    color: #7046c7;
+
+    font-size: 55px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 20px
+        rgba(0, 0, 0, 0.10);
+
+    transition: 0.2s;
+
+}
+
+
+.numero-card:hover {
+
+    transform:
+        translateY(-8px)
+        scale(1.03);
+
+    box-shadow:
+        0 12px 25px
+        rgba(112, 70, 199, 0.20);
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8ddff,
+            #e1efff
+        );
+
+}
+
+
+/* =====================================
+   BOTÃO EXPLICAÇÃO
+===================================== */
+
+.botao-explicacao {
+
+    margin-top: 50px;
+
+    padding: 17px 35px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #7046c7;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px
+        rgba(112, 70, 199, 0.25);
+
+    transition: 0.2s;
+
+}
+
+
+.botao-explicacao:hover {
+
+    background: #5d36ae;
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =====================================
+   JANELA DE EXPLICAÇÃO
+===================================== */
+
+.janela-explicacao {
+
+    display: none;
+
+    position: fixed;
+
+    z-index: 9999;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        rgba(30, 20, 50, 0.65);
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+
+}
+
+
+/* =====================================
+   CAIXA DA EXPLICAÇÃO
+===================================== */
+
+.conteudo-explicacao {
+
+    position: relative;
+
+    width: 90%;
+
+    max-width: 700px;
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 50px
+        rgba(0, 0, 0, 0.3);
+
+}
+
+
+/* TÍTULO */
+
+.conteudo-explicacao h2 {
+
+    text-align: center;
+
+    color: #7046c7;
+
+    font-size: 32px;
+
+    margin-top: 0;
+
+}
+
+
+/* =====================================
+   ÁUDIO
+===================================== */
+
+.audio-explicacao {
+
+    background: #f3efff;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    margin: 25px 0;
+
+    text-align: center;
+
+}
+
+
+.audio-explicacao h3 {
+
+    color: #7046c7;
+
+}
+
+
+.audio-explicacao audio {
+
+    width: 100%;
+
+    max-width: 500px;
+
+}
+
+
+/* =====================================
+   TEXTO
+===================================== */
+
+.texto-explicacao {
+
+    background: #f8f8ff;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+}
+
+
+.texto-explicacao h3 {
+
+    color: #7046c7;
+
+    font-size: 24px;
+
+}
+
+
+.texto-explicacao p {
+
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================
+   BOTÃO X
+===================================== */
+
+.fechar-explicacao {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 18px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #7046c7;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+}
+
+
+.fechar-explicacao:hover {
+
+    background: #5d36ae;
+
+}
+
+
+/* =====================================
+   CELULAR
+===================================== */
+
+@media (max-width: 700px) {
+
+    .grade-numeros {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .numero-card {
+
+        height: 120px;
+
+        font-size: 45px;
+
+    }
+
+
+    .numeros h1 {
+
+        font-size: 38px;
+
+    }
+
+}
+/* =====================================
+   ÁREA DOS NÚMEROS
+===================================== */
+
+.numeros {
+
+    text-align: center;
+
+    padding: 70px 30px;
+
+    min-height: 75vh;
+
+}
+
+
+.numeros h1 {
+
+    font-size: 50px;
+
+    color: #7046c7;
+
+    margin-bottom: 15px;
+
+}
+
+
+.numeros-intro {
+
+    font-size: 19px;
+
+    color: #666;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =====================================
+   GRADE
+===================================== */
+
+.grade-numeros {
+
+    width: 100%;
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 25px;
+
+}
+
+
+/* =====================================
+   CARDS
+===================================== */
+
+.numero-card {
+
+    height: 150px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #eee7ff
+        );
+
+    color: #7046c7;
+
+    font-size: 55px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 7px 20px
+        rgba(0, 0, 0, 0.10);
+
+    transition: 0.2s;
+
+}
+
+
+.numero-card:hover {
+
+    transform:
+        translateY(-8px)
+        scale(1.03);
+
+    box-shadow:
+        0 12px 25px
+        rgba(112, 70, 199, 0.20);
+
+}
+
+
+/* =====================================
+   BOTÃO GUIA
+===================================== */
+
+.botao-guia {
+
+    display: block;
+
+    margin: 20px auto;
+
+    padding: 16px 28px;
+
+    border: none;
+
+    border-radius: 14px;
+
+    background: #7046c7;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px
+        rgba(112, 70, 199, 0.3);
+
+    transition: 0.2s;
+
+}
+
+
+.botao-guia:hover {
+
+    background: #5d36ae;
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =====================================
+   VÍDEO
+===================================== */
+
+.video-numero {
+
+    background: white;
+
+    width: 600px;
+
+    max-width: 90%;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0, 0, 0, 0.12);
+
+}
+
+
+.video-numero h2 {
+
+    color: #7046c7;
+
+    font-size: 30px;
+
+}
+
+
+.video-numero video {
+
+    width: 100%;
+
+    border-radius: 15px;
+
+}
+
+
+/* =====================================
+   BOTÃO EXPLICAÇÃO
+===================================== */
+
+.botao-explicacao {
+
+    margin-top: 20px;
+
+    padding: 17px 35px;
+
+    border: none;
+
+    border-radius: 15px;
+
+    background: #7046c7;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+
+.botao-explicacao:hover {
+
+    background: #5d36ae;
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =====================================
+   JANELA DO GUIA
+===================================== */
+
+.guia {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        rgba(20, 15, 40, 0.60);
+
+    z-index: 9999;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+}
+
+
+.guia-conteudo {
+
+    position: relative;
+
+    width: 90%;
+
+    max-width: 900px;
+
+    max-height: 90vh;
+
+    overflow: auto;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+}
+
+
+.guia-conteudo h2 {
+
+    color: #7046c7;
+
+}
+
+
+.guia-conteudo img {
+
+    width: 100%;
+
+    max-width: 800px;
+
+    height: auto;
+
+    border-radius: 15px;
+
+}
+
+
+/* =====================================
+   BOTÃO X DO GUIA
+===================================== */
+
+.fechar-guia {
+
+    position: absolute;
+
+    top: 12px;
+
+    right: 15px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #7046c7;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+}
+
+
+/* =====================================
+   JANELA EXPLICAÇÃO
+===================================== */
+
+.janela-explicacao {
+
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background:
+        rgba(30, 20, 50, 0.65);
+
+    z-index: 9999;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 25px;
+
+}
+
+
+.conteudo-explicacao {
+
+    position: relative;
+
+    width: 90%;
+
+    max-width: 700px;
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 50px
+        rgba(0, 0, 0, 0.3);
+
+}
+
+
+.conteudo-explicacao h2 {
+
+    text-align: center;
+
+    color: #7046c7;
+
+    font-size: 32px;
+
+}
+
+
+.audio-explicacao {
+
+    background: #f3efff;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    margin: 25px 0;
+
+    text-align: center;
+
+}
+
+
+.audio-explicacao h3 {
+
+    color: #7046c7;
+
+}
+
+
+.audio-explicacao audio {
+
+    width: 100%;
+
+}
+
+
+.texto-explicacao {
+
+    background: #f8f8ff;
+
+    padding: 25px;
+
+    border-radius: 18px;
+
+}
+
+
+.texto-explicacao h3 {
+
+    color: #7046c7;
+
+}
+
+
+.texto-explicacao p {
+
+    color: #555;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+.fechar-explicacao {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 18px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #7046c7;
+
+    color: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+
+}
+
+
+/* =====================================
+   CELULAR
+===================================== */
+
+@media (max-width: 700px) {
+
+    .grade-numeros {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .numero-card {
+
+        height: 120px;
+
+        font-size: 45px;
+
+    }
+
+
+    .numeros h1 {
+
+        font-size: 38px;
+
+    }
+
+}
